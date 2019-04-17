@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFX-UQ-qQU">
-                                <rect key="frame" x="142" y="360" width="91" height="46"/>
+                                <rect key="frame" x="142" y="310" width="91" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99845008940000002" green="1" blue="0.62641702710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="START"/>
@@ -36,12 +36,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsV-P2-OaR">
-                                <rect key="frame" x="142" y="480" width="91" height="42"/>
+                                <rect key="frame" x="142" y="422" width="91" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99845008940000002" green="1" blue="0.62641702710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="STOP"/>
                                 <connections>
                                     <action selector="stop" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQT-1g-bO8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca5-Ey-nU9">
+                                <rect key="frame" x="142" y="520" width="91" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99845008940000002" green="1" blue="0.62641702710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7A-q6-mfM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,6 +60,7 @@
                     <connections>
                         <outlet property="button1" destination="gFX-UQ-qQU" id="25t-zI-bDh"/>
                         <outlet property="button2" destination="ZsV-P2-OaR" id="swo-yb-Dwv"/>
+                        <outlet property="button3" destination="Ca5-Ey-nU9" id="Fyo-sF-RMz"/>
                         <outlet property="labelTimer" destination="k2B-tN-gDz" id="0Xs-l3-O5p"/>
                     </connections>
                 </viewController>

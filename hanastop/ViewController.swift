@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelTimer: UILabel!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
-    
+    @IBOutlet weak var button3: UIButton!
     
     
     override func viewDidLoad() {
@@ -51,6 +51,16 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func reset() {
+        if timer.isValid{
+            timer.invalidate()
+            labelTimer.text = String(0.0)
+        }
+        
+        if !timer.isValid{
+            labelTimer.text = String(0.0)
+        }
+    }
 
 
 
