@@ -55,10 +55,12 @@ class ViewController: UIViewController {
         if timer.isValid{
             timer.invalidate()
             labelTimer.text = String(0.0)
+            count = 0
         }
         
         if !timer.isValid{
             labelTimer.text = String(0.0)
+            count = 0
         }
     }
 
